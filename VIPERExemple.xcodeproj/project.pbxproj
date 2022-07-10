@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		BD59B231287B2330000ED7EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59B230287B2330000ED7EE /* AppDelegate.swift */; };
 		BD59B233287B2330000ED7EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59B232287B2330000ED7EE /* SceneDelegate.swift */; };
-		BD59B235287B2330000ED7EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59B234287B2330000ED7EE /* ViewController.swift */; };
+		BD59B235287B2330000ED7EE /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59B234287B2330000ED7EE /* GreetingViewController.swift */; };
 		BD59B238287B2330000ED7EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD59B236287B2330000ED7EE /* Main.storyboard */; };
 		BD59B23A287B2331000ED7EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD59B239287B2331000ED7EE /* Assets.xcassets */; };
 		BD59B23D287B2331000ED7EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD59B23B287B2331000ED7EE /* LaunchScreen.storyboard */; };
+		BD59B246287B2393000ED7EE /* GreetingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59B245287B2393000ED7EE /* GreetingPresenter.swift */; };
+		BD59B248287B23A2000ED7EE /* GreetingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59B247287B23A2000ED7EE /* GreetingInteractor.swift */; };
+		BD59B24A287B23B9000ED7EE /* GreetingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59B249287B23B9000ED7EE /* GreetingConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BD59B22D287B2330000ED7EE /* VIPERExemple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERExemple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD59B230287B2330000ED7EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD59B232287B2330000ED7EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BD59B234287B2330000ED7EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD59B234287B2330000ED7EE /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
 		BD59B237287B2330000ED7EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD59B239287B2331000ED7EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD59B23C287B2331000ED7EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD59B23E287B2331000ED7EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD59B245287B2393000ED7EE /* GreetingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingPresenter.swift; sourceTree = "<group>"; };
+		BD59B247287B23A2000ED7EE /* GreetingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingInteractor.swift; sourceTree = "<group>"; };
+		BD59B249287B23B9000ED7EE /* GreetingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		BD59B22F287B2330000ED7EE /* VIPERExemple */ = {
 			isa = PBXGroup;
 			children = (
+				BD59B244287B2358000ED7EE /* Greeting */,
 				BD59B230287B2330000ED7EE /* AppDelegate.swift */,
 				BD59B232287B2330000ED7EE /* SceneDelegate.swift */,
-				BD59B234287B2330000ED7EE /* ViewController.swift */,
 				BD59B236287B2330000ED7EE /* Main.storyboard */,
 				BD59B239287B2331000ED7EE /* Assets.xcassets */,
 				BD59B23B287B2331000ED7EE /* LaunchScreen.storyboard */,
 				BD59B23E287B2331000ED7EE /* Info.plist */,
 			);
 			path = VIPERExemple;
+			sourceTree = "<group>";
+		};
+		BD59B244287B2358000ED7EE /* Greeting */ = {
+			isa = PBXGroup;
+			children = (
+				BD59B234287B2330000ED7EE /* GreetingViewController.swift */,
+				BD59B245287B2393000ED7EE /* GreetingPresenter.swift */,
+				BD59B247287B23A2000ED7EE /* GreetingInteractor.swift */,
+				BD59B249287B23B9000ED7EE /* GreetingConfigurator.swift */,
+			);
+			path = Greeting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD59B235287B2330000ED7EE /* ViewController.swift in Sources */,
+				BD59B235287B2330000ED7EE /* GreetingViewController.swift in Sources */,
+				BD59B24A287B23B9000ED7EE /* GreetingConfigurator.swift in Sources */,
 				BD59B231287B2330000ED7EE /* AppDelegate.swift in Sources */,
 				BD59B233287B2330000ED7EE /* SceneDelegate.swift in Sources */,
+				BD59B246287B2393000ED7EE /* GreetingPresenter.swift in Sources */,
+				BD59B248287B23A2000ED7EE /* GreetingInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
